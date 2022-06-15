@@ -100,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               Padding(
-                  padding: EdgeInsets.all(15.sp),
+                  padding: EdgeInsets.symmetric(vertical: 30.sp,horizontal: 40.sp),
                   child: _isLoading
                       ? const Center(
                           child: CircularProgressIndicator(),
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ? lstStory[itemIndex].title!
                               : "fail",
                           style: TextStyle(
-                              fontSize: 15.sp,
+                              fontSize: 13.sp,
                               color: Colors.black54))),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: ButtonStyle(
                       foregroundColor: MaterialStateProperty.all(Colors.white),
                       backgroundColor: MaterialStateProperty.all(Colors.blue),
-                      fixedSize: MaterialStateProperty.all(Size(100.sp, 30.sp)),
+                      fixedSize: MaterialStateProperty.all(Size(120.sp, 30.sp)),
                     ),
                     onPressed: () {
                       if (lstStory.length - 1 > itemIndex) {
@@ -138,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: ButtonStyle(
                       foregroundColor: MaterialStateProperty.all(Colors.white),
                       backgroundColor: MaterialStateProperty.all(Colors.green),
-                      fixedSize: MaterialStateProperty.all(Size(100.sp, 30.sp)),
+                      fixedSize: MaterialStateProperty.all(Size(120.sp, 30.sp)),
                     ),
                     onPressed: () {
                       if (lstStory.length - 1 > itemIndex) {
